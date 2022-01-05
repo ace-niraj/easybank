@@ -1,0 +1,24 @@
+@media screen and (max-width: 62rem) {
+  .landing_description {
+    padding-top: 12rem;
+    padding-bottom: 7rem;
+  }
+
+  .about_wrapper {
+    text-align: center;
+    width: 100%;
+  }
+  .area_why_us {
+    width: 100%;
+  }
+
+  .article_wrapper {
+    text-align: center;
+  }
+  .footer_wrapper {
+    gap: 2rem;
+  }
+  .copyright {
+    text-align: end;
+  }
+}

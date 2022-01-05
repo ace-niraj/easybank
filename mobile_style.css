@@ -1,0 +1,67 @@
+@media screen and (max-width: 43rem) {
+  .nav_mobile_menu {
+    display: block;
+    cursor: pointer;
+  }
+  .header_area {
+    justify-content: space-between;
+  }
+  .landing_image {
+    min-height: 25rem;
+  }
+  .background_image {
+    width: 100%;
+    background-position: center;
+    background-image: url(images/bg-intro-mobile.svg);
+    display: flex;
+    justify-content: center;
+  }
+  .background_image > img {
+    width: 80%;
+    transform: translateY(-3.9%);
+  }
+  .landing_description {
+    padding-top: 7rem;
+    margin: auto;
+    text-align: center;
+    transform: translateY(-50%);
+    padding-bottom: 5rem;
+  }
+  .nav_menu {
+    display: none;
+  }
+  .nav_button {
+    display: none;
+  }
+  .area_why_us {
+    width: 100%;
+    text-align: center;
+  }
+
+  .article_heading {
+    text-align: center;
+  }
+  .article_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .article_card {
+    max-width: 100%;
+  }
+  .footer_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .footer_menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  .footer_button {
+    text-align: center;
+    align-items: center;
+  }
+}

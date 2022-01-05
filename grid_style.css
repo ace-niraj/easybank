@@ -1,0 +1,113 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 6rem 1fr 1fr 6rem;
+  grid-template-areas:
+    '. header header .'
+    '. main_area main_area main_area'
+    'about about about about'
+    'article article article article'
+    'footer footer footer footer';
+}
+.header_area {
+  grid-area: header;
+}
+.main_area {
+  grid-area: main_area;
+}
+
+.about_area {
+  grid-area: about;
+}
+.article_area {
+  grid-area: article;
+}
+.footer_area {
+  padding: 2rem 0;
+  grid-area: footer;
+  background-color: hsl(233, 26%, 24%);
+}
+.main_area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'landing_description landing_image';
+}
+.about_area {
+  background-color: hsl(220, 16%, 96%);
+  display: grid;
+  grid-template-columns: 6rem 1fr 6rem;
+  grid-template-areas: '. about_wrapper  .';
+}
+.about_wrapper {
+  grid-area: about_wrapper;
+}
+.cards {
+  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  flex: 1 1 15rem;
+}
+.article_area {
+  display: grid;
+  background-color: hsl(0, 0%, 98%);
+  grid-template-columns: 6rem 1fr 6rem;
+  grid-template-areas: '. article_wrapper  .';
+}
+.article_wrapper {
+  grid-area: article_wrapper;
+}
+.article_cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.article_card {
+  flex: 1 1 15rem;
+}
+.footer_area {
+  display: grid;
+  grid-template-columns: 6rem 1fr 6rem;
+  grid-template-areas:
+    '. footer_wrapper  .'
+    '. challenge .';
+}
+.footer_wrapper {
+  grid-area: footer_wrapper;
+}
+.challenge {
+  padding-top: 2rem;
+  grid-area: challenge;
+}
+/* grid mobile */
+@media screen and (max-width: 43rem) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 3rem 1fr 1fr 3rem;
+    grid-template-areas:
+      '. header header .'
+      'main_area main_area main_area main_area'
+      'about about about about'
+      'article article article article'
+      'footer footer footer footer';
+  }
+  .main_area {
+    display: grid;
+    grid-template-columns: 3rem 1fr 3rem;
+    grid-template-areas: 'landing_image landing_image landing_image' '. landing_description .';
+  }
+  .landing_image {
+    grid-area: landing_image;
+  }
+  .landing_description {
+    grid-area: landing_description;
+  }
+  .about_area {
+    display: grid;
+    grid-template-columns: 3rem 1fr 3rem;
+  }
+  .article_area {
+    display: grid;
+    grid-template-columns: 3rem 1fr 3rem;
+  }
+}
